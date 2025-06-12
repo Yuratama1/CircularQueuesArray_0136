@@ -18,7 +18,7 @@ class Queue{
             cout << endl;
 
             //1. cek apakah antrian penuh
-            if((FRONT == 0 && REAR == max - 1) || (FRONT = REAR + 1)){
+            if((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1)){
                 cout << "\nQueue overlow\n";//1.a
                 return; //1.b
             }
@@ -42,7 +42,7 @@ class Queue{
                 cout << "Queue underflow\n";
                 return;
             }
-            cout << "\nThe element deled from the queue isi :" << queue_array[FRONT] << "\n";
+            cout << "\nThe element deletd from the queue is :" << queue_array[FRONT] << "\n";
             //cek apakah antrian hanya memeilki satu elemen
             if(FRONT == REAR){
                 FRONT = -1;
@@ -119,6 +119,7 @@ int main(){
                 }
                 case '3':{
                     q.display();
+                    break;
                 }
                 case '4':{
                     return 0;
