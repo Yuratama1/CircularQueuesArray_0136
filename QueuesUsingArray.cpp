@@ -42,4 +42,10 @@ class Queue{
                 cout << "Queue underflow\n";
                 return;
             }
+            cout << "\nThe element deled from the queue isi :" << queue_array[FRONT] << "\n";
+            //cek apakah antrian hanya memeilki satu elemen
+            if(FRONT == REAR){
+                FRONT = -1;
+                REAR = -1;
+            }
             
