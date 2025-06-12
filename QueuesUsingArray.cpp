@@ -2,8 +2,13 @@
 using namespace std;
 
 class Queue{
-    Private:
+    private:
        static const int max = 5;
        int FRONT, REAR;
        int queue_array[5]; 
+    public:
+        Queue(){
+            FRONT = -1;
+            REAR = -1;
+        }
 };
